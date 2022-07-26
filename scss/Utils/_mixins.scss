@@ -1,0 +1,7 @@
+@mixin btn-primary {
+    border: none;  
+    border-radius: 50px;
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    margin : auto;
+    color: $background-primary;
+}

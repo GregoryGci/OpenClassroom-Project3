@@ -1,0 +1,22 @@
+footer {
+    background-color: $background-tertiary;
+    color: $background-primary;
+    padding: 18px 1px 24px 18px;
+    font-size: 0.8em;
+    
+
+    .h3_footer {
+        font-family: $font-title-logo;
+        font-size: 1.3em;
+        padding-bottom: 10px;
+        font-weight: 100;
+    }
+
+    div{
+        line-height: 20px;
+    }
+
+    .fa-handshake-angle, .fa-utensils{
+        padding-right: 8px;
+    }
+}

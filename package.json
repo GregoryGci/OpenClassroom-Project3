@@ -1,0 +1,25 @@
+{
+  "name": "projet-3-op",
+  "version": "1.0.0",
+  "description": "omf",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregoryGci/Projet-3-OC.git"
+  },
+  "author": "nono",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregoryGci/Projet-3-OC/issues"
+  },
+  "homepage": "https://github.com/GregoryGci/Projet-3-OC#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

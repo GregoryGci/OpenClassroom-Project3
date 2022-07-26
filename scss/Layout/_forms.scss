@@ -1,0 +1,27 @@
+article {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    .main_article_h1 {
+        font-size: 1.3em;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .main_article_h2 {
+        font-size: 1em;
+        color: rgb(100, 100, 100);
+        font-weight: 400;
+        margin-top: -3px;
+    }
+}
+
+.background-1 {
+    background-color: $background-secondary;
+}
+
+.article_btn {
+    @include btn-primary;
+    height: 55px;
+    width: 220px;
+}

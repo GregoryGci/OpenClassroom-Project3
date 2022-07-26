@@ -1,0 +1,20 @@
+@import'../node_modules/normalize.css/normalize.css';
+@import './Utils/variables';
+@import './Utils/mixins';
+@import './Utils/functions';
+
+@import './base/typography';
+
+@import './Layout/navigation';
+@import './Layout/header';
+@import './Layout/footer';
+@import './layout/sidebar';
+@import './Layout/forms';
+
+@import './Composants/buttons';
+
+*{
+    font-family:$font-texte;
+}
+
+
