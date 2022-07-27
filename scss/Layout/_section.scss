@@ -1,0 +1,62 @@
+.main_section_h1 {
+    @include h1;
+    padding: 20px 0px 0px 15px;
+}
+/*
+.main_section_btn_fonctionnement {
+    background-color: $background-secondary;
+    padding: 10px 0px 0px 0px;
+    margin:auto;
+    text-align: center;
+    width: 80%;
+    height: 45px;
+    line-height: 35px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 10px rgb(228, 228, 228);
+
+    
+    
+    .fa_btn_numéro{
+        color:rgb(100, 100, 100);
+    }
+    
+}.numéro_btn_fonctionnement {
+    color: $background-primary;
+    background-color: $color-primary;
+    border-radius: 80%;
+    padding: 3px 7px 3px 7px;
+    font-size: 0.7em;
+    margin-left: -px;
+    }
+    */
+
+.main_section_btn_fonctionnement {
+    display: flex;
+    background-color: $background-secondary;
+    margin: 20px auto;
+    border-radius: 16px;
+    box-shadow: 0px 8px 10px rgb(228, 228, 228);
+    width: 80%;
+    height: 55px;
+    align-items: center;
+    
+
+    .numéro_btn_fonctionnement {
+        margin: -8px;
+        color: $background-primary;
+        background-color: $color-primary;
+        border-radius: 80%;
+        padding: 5px 7px 3px 7px;
+        font-size: 0.7em;
+    }
+    .fa_btn_numéro {
+        padding: 0px 20px;
+        color:rgb(100, 100, 100);
+    }
+
+    .main_section_text{
+        font-size: 0.8em;
+    font-weight: 600;
+    }
+
+}

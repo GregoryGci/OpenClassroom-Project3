@@ -1,0 +1,36 @@
+.main_article {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: $padding-bottom-primary;
+
+    .main_article_h1 {
+        @include h1;
+        padding: 20px 40px 0px 40px;
+    }
+
+    .main_article_h2 {
+        font-size: 0.97em;
+        color: rgb(100, 100, 100);
+        font-weight: 400;
+        margin-top: -3px;
+        padding:0px 20px 12px 20px
+    }
+
+    .article_btn {
+        @include btn-primary;
+        height: 40px;
+        width: 190px;
+        box-shadow: 1px 3px 8px rgb(178, 178, 178);
+    }
+
+    .span_article {
+        font-size: 0.8em;
+        font-weight: 440;
+        letter-spacing: 0.4px;
+        color: $background-secondary;
+    }
+}
+.background-1 {
+    background-color: $background-secondary;
+}

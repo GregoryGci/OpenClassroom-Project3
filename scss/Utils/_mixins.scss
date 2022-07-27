@@ -1,7 +1,12 @@
 @mixin btn-primary {
-    border: none;  
+    border: none;
     border-radius: 50px;
-    background: linear-gradient(to right, $color-secondary, $color-primary);
-    margin : auto;
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
+    margin: auto;
     color: $background-primary;
+}
+
+@mixin h1 {
+    font-size: 1.3em;
+    font-weight: 720;
 }

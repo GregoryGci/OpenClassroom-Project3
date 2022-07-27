@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../node_modules/normalize.css/normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -5,15 +6,15 @@
   background-color: #E8E8E8;
   display: flex;
   justify-content: center;
-  padding: 0.5em 0em 0.5em 0em;
+  padding: 0.8em 0em 0.8em 0em;
   font-size: 0.9em;
+  color: rgb(64, 64, 64);
 }
 
 .location_city {
   padding-left: 1em;
   padding-right: 1em;
   font-weight: 600;
-  color: rgb(89, 89, 89);
 }
 
 header {
@@ -51,35 +52,110 @@ footer div {
 footer .fa-handshake-angle, footer .fa-utensils {
   padding-right: 8px;
 }
+footer .link_footer {
+  outline: none;
+  text-decoration: none;
+  color: #FDFDFD;
+  cursor: pointer;
+}
 
-article {
+.main_section_h1 {
+  font-size: 1.3em;
+  font-weight: 720;
+  padding: 20px 0px 0px 15px;
+}
+
+/*
+.main_section_btn_fonctionnement {
+    background-color: $background-secondary;
+    padding: 10px 0px 0px 0px;
+    margin:auto;
+    text-align: center;
+    width: 80%;
+    height: 45px;
+    line-height: 35px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 10px rgb(228, 228, 228);
+
+
+
+    .fa_btn_numéro{
+        color:rgb(100, 100, 100);
+    }
+
+}.numéro_btn_fonctionnement {
+    color: $background-primary;
+    background-color: $color-primary;
+    border-radius: 80%;
+    padding: 3px 7px 3px 7px;
+    font-size: 0.7em;
+    margin-left: -px;
+    }
+    */
+.main_section_btn_fonctionnement {
+  display: flex;
+  background-color: #F6F6F6;
+  margin: 20px auto;
+  border-radius: 16px;
+  box-shadow: 0px 8px 10px rgb(228, 228, 228);
+  width: 80%;
+  height: 55px;
+  align-items: center;
+}
+.main_section_btn_fonctionnement .numéro_btn_fonctionnement {
+  margin: -8px;
+  color: #FDFDFD;
+  background-color: #9356DC;
+  border-radius: 80%;
+  padding: 5px 7px 3px 7px;
+  font-size: 0.7em;
+}
+.main_section_btn_fonctionnement .fa_btn_numéro {
+  padding: 0px 20px;
+  color: rgb(100, 100, 100);
+}
+.main_section_btn_fonctionnement .main_section_text {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.main_article {
   display: flex;
   text-align: center;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
-article .main_article_h1 {
+.main_article .main_article_h1 {
   font-size: 1.3em;
-  padding: 30px 40px 0px 40px;
+  font-weight: 720;
+  padding: 20px 40px 0px 40px;
 }
-article .main_article_h2 {
-  font-size: 1em;
+.main_article .main_article_h2 {
+  font-size: 0.97em;
   color: rgb(100, 100, 100);
   font-weight: 400;
   margin-top: -3px;
+  padding: 0px 20px 12px 20px;
+}
+.main_article .article_btn {
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  margin: auto;
+  color: #FDFDFD;
+  height: 40px;
+  width: 190px;
+  box-shadow: 1px 3px 8px rgb(178, 178, 178);
+}
+.main_article .span_article {
+  font-size: 0.8em;
+  font-weight: 440;
+  letter-spacing: 0.4px;
+  color: #F6F6F6;
 }
 
 .background-1 {
   background-color: #F6F6F6;
-}
-
-.article_btn {
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to right, #FF79DA, #9356DC);
-  margin: auto;
-  color: #FDFDFD;
-  height: 55px;
-  width: 220px;
 }
 
 * {

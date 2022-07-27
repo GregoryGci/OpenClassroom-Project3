@@ -19,4 +19,11 @@ footer {
     .fa-handshake-angle, .fa-utensils{
         padding-right: 8px;
     }
+
+    .link_footer{
+        outline: none;
+        text-decoration: none;
+        color: $background-primary;
+        cursor: pointer;
+    }
 }
