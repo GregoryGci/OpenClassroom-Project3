@@ -17,19 +17,31 @@
   font-weight: 600;
 }
 
+/* CSS FOR RESTAURANT PAGE ONLY*/
 header {
   background-color: #FDFDFD;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
-  padding: 1em 0em 0.5em 0em;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.9em 0em 0.5em 0em;
   margin-bottom: 3px;
   box-shadow: 1px 1px 8px rgb(178, 178, 178);
+  /* CSS FOR RESTAURANT PAGE ONLY*/
+}
+.nav .nav_back_icon {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0% 40%;
 }
 
+/********************************/
 .image_title {
+  padding-left: 24%;
   width: 44%;
   height: auto;
 }
@@ -158,6 +170,43 @@ footer .link_footer {
   padding-right: 5px;
 }
 
+/*********** CSS FOR RESTAURANT PAGE ONLY ***********/
+.main_backgound_restaurant {
+  position: relative;
+  margin: auto;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.main_section_restaurant {
+  background-color: #FDFDFD;
+  position: relative;
+  z-index: 1;
+  margin-top: -56px;
+  border: 1px solid white;
+  border-radius: 35px 35px 0% 0%;
+}
+
+.h1_icon_restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+.h1_icon_restaurant .main_restaurant_h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 560;
+  font-size: 1.5em;
+}
+.h1_icon_restaurant .fa-heart_restaurant {
+  font-size: 22px;
+}
+
+/*********** CSS FOR RESTAURANT PAGE ONLY ***********/
 .main_article {
   display: flex;
   text-align: center;
