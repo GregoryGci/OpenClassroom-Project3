@@ -21,6 +21,14 @@
     transform: rotate(0deg);
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .location {
   background-color: #E8E8E8;
   display: flex;
@@ -284,6 +292,7 @@ footer .link_footer {
   justify-content: space-between;
   flex-direction: row-reverse;
   padding: 12px 20px;
+  padding-bottom: 0;
 }
 .main_restaurant .header_section_restaurant .main_restaurant_h1 {
   font-family: "Shrikhand", cursive;
@@ -305,22 +314,146 @@ footer .link_footer {
   font-size: 22px;
 }
 .main_restaurant .section_restaurant_h2 {
+  animation: fadein 1s ease-in-out both;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.9em;
-  margin: 0 0 20px 0;
-  padding: 0 0 0 20px;
+  margin: 20px 0 20px 20px;
+  padding: 0 10px 0 0;
+  border-bottom: 3px solid #99E2D0;
+  width: 20px;
+}
+.main_restaurant .section_restaurant_h2:nth-child(1) {
+  animation-delay: 100ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(2) {
+  animation-delay: 200ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(3) {
+  animation-delay: 300ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(4) {
+  animation-delay: 400ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(5) {
+  animation-delay: 500ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(6) {
+  animation-delay: 600ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(7) {
+  animation-delay: 700ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(8) {
+  animation-delay: 800ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(9) {
+  animation-delay: 900ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(12) {
+  animation-delay: 1200ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(13) {
+  animation-delay: 1300ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(14) {
+  animation-delay: 1400ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(15) {
+  animation-delay: 1500ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(16) {
+  animation-delay: 1600ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(17) {
+  animation-delay: 1700ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(18) {
+  animation-delay: 1800ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(19) {
+  animation-delay: 1900ms;
+}
+.main_restaurant .section_restaurant_h2:nth-child(20) {
+  animation-delay: 2000ms;
 }
 .main_restaurant .section_menu_restaurant {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: white;
   border-radius: 16px;
   box-shadow: 0px 8px 10px rgb(224, 223, 223);
   height: 50px;
-  margin: 6px 10px;
+  margin: 10px 10px;
   padding: 6px 0 6px 10px;
+  animation: fadein 1s ease-in-out both;
+}
+.main_restaurant .section_menu_restaurant:nth-child(1) {
+  animation-delay: 100ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(2) {
+  animation-delay: 200ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(3) {
+  animation-delay: 300ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(4) {
+  animation-delay: 400ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(5) {
+  animation-delay: 500ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(6) {
+  animation-delay: 600ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(7) {
+  animation-delay: 700ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(8) {
+  animation-delay: 800ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(9) {
+  animation-delay: 900ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(12) {
+  animation-delay: 1200ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(13) {
+  animation-delay: 1300ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(14) {
+  animation-delay: 1400ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(15) {
+  animation-delay: 1500ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(16) {
+  animation-delay: 1600ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(17) {
+  animation-delay: 1700ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(18) {
+  animation-delay: 1800ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(19) {
+  animation-delay: 1900ms;
+}
+.main_restaurant .section_menu_restaurant:nth-child(20) {
+  animation-delay: 2000ms;
 }
 .main_restaurant .section_menu_restaurant:hover .icone_animation_menu {
   animation-name: check_margin;
@@ -332,25 +465,32 @@ footer .link_footer {
   animation-name: check_rotate;
   animation-duration: 1.1s;
   animation-fill-mode: forwards;
-  transition-timing-function: easecd -out;
+  transition-timing-function: ease-in;
 }
 .main_restaurant .section_menu_restaurant .menu_name_description {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 88%;
 }
 .main_restaurant .section_menu_restaurant .menu_name_description h4,
 .main_restaurant .section_menu_restaurant .menu_name_description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin: 0;
   padding: 2px 0px;
 }
 .main_restaurant .section_menu_restaurant .menu_name_description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.8em;
 }
 .main_restaurant .section_menu_restaurant .menu_cost_restaurant {
   font-size: 0.8em;
   font-weight: 800;
+  padding-left: 2px;
   padding-top: 25px;
+  width: 20%;
 }
 .main_restaurant .section_menu_restaurant .icone_animation_menu {
   background-color: #99E2D0;
@@ -360,6 +500,25 @@ footer .link_footer {
 }
 .main_restaurant .section_menu_restaurant .icone_animation_menu .fa-circle-check {
   color: white;
+}
+
+.order_btn {
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  margin: auto;
+  height: 40px;
+  width: 150px;
+  box-shadow: 1px 3px 8px rgb(178, 178, 178);
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.order_btn .text_order_btn {
+  font-size: 0.8em;
+  font-weight: 440;
+  letter-spacing: 0.4px;
+  color: #F6F6F6;
 }
 
 .btn:hover {
