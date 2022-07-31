@@ -1,0 +1,86 @@
+// header restaurant //
+
+.main_restaurant {
+    background-color: $background-secondary;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+
+    .header_section_restaurant {
+        @include restaurant_title_heart;
+
+        &::before {
+            @include heart_icon;
+            font-size: 22px;
+        }
+    }
+
+    /*MENU RESTAURANT*/
+
+    .section_restaurant_h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.9em;
+        margin: 0 0 20px 0;
+        padding: 0 0 0 20px;
+    }
+    .section_menu_restaurant {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: $box-shadow;
+        height: 50px;
+        margin: 6px 10px;
+        padding: 6px 0 6px 10px;
+        &:hover {
+            & .icone_animation_menu {
+                animation-name: check_margin;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                transition-timing-function: ease-in-out;
+            }
+            & .fa-circle-check{
+                animation-name: check_rotate;
+                animation-duration: 1.1s;
+                animation-fill-mode: forwards;
+                transition-timing-function: easecd -out;
+            }
+        }
+
+        .menu_name_description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            h4,
+            p {
+                margin: 0;
+                padding: 2px 0px;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        .menu_cost_restaurant {
+            font-size: 0.8em;
+            font-weight: 800;
+            padding-top: 25px;
+        }
+
+        .icone_animation_menu {
+            background-color: $color-tertiary;
+            padding: 22px;
+            margin-right: -150px;
+            border-radius: 0 16px 16px 0;
+
+            .fa-circle-check {
+                color: white;
+            }
+        }
+    }
+}

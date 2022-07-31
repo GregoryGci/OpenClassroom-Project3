@@ -1,0 +1,23 @@
+.btn {
+    &:hover {
+        filter: brightness(1.1);
+        cursor: pointer;
+        box-shadow: 4px 5px 10px rgb(173, 173, 173);
+        transition-duration: 300ms;
+    }
+}
+
+.main_section_btn_fonctionnement {
+    &:hover {
+        cursor: pointer;
+        background-color: adjust-color($color-primary, $lightness: 35%);
+        .fa_btn_numéro {
+            color: $color-primary;
+        }
+    }
+}
+
+
+
+        
+  
