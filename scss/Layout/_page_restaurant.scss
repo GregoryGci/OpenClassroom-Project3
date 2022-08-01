@@ -1,5 +1,3 @@
-// header restaurant //
-
 .main_restaurant {
     background-color: $background-secondary;
 
@@ -43,6 +41,7 @@
                 animation-delay: $i * 100ms;
             }
         }
+        animation: fadein 1s ease-in-out both;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -52,8 +51,6 @@
         height: 50px;
         margin: 10px 10px;
         padding: 6px 0 6px 10px;
-
-        animation: fadein 1s ease-in-out both;
 
         &:hover {
             & .icone_animation_menu {
@@ -120,10 +117,11 @@
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
-    
-    .text_order_btn{
+
+    .text_order_btn {
         font-size: 0.8em;
         font-weight: 440;
         letter-spacing: 0.4px;
-        color: $background-secondary;    }
+        color: $background-secondary;
+    }
 }

@@ -3,6 +3,7 @@
 @import './Utils/mixins';
 @import './Utils/functions';
 
+@import'./Layout/loader';
 @import './Layout/navigation';
 @import './Layout/header';
 @import './Layout/footer';
@@ -15,5 +16,6 @@
 *{
     font-family:$font-texte;
 }
+
 
 
