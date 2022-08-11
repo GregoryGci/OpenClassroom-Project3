@@ -23,9 +23,11 @@
 }
 @keyframes fadein {
   from {
+    transform: translateY(5px);
     opacity: 0;
   }
   to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -33,7 +35,7 @@
   background: rgb(241, 241, 241);
   position: absolute;
   width: 100%;
-  height: 155%;
+  height: 100%;
   animation: background_loader 4s ease-in-out both;
 }
 
@@ -43,8 +45,8 @@
   /* POSITIONNEMENT*/
   margin: auto;
   position: absolute;
-  top: 0px;
-  bottom: 1100px;
+  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
   /*STYLE*/
@@ -105,6 +107,7 @@
   }
   70% {
     z-index: 4;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -160,6 +163,14 @@ footer {
   color: #FDFDFD;
   padding: 18px 1px 24px 18px;
   font-size: 0.8em;
+}
+@media screen and (min-width: 708px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 footer .h3_footer {
   font-family: "Shrikhand", cursive;
@@ -355,6 +366,7 @@ footer .link_footer {
 
 .main_restaurant {
   background-color: #F6F6F6;
+  overflow: hidden;
   /*MENU RESTAURANT*/
 }
 .main_restaurant img {
@@ -394,6 +406,10 @@ footer .link_footer {
   padding-right: 5px;
   opacity: 1;
   font-size: 22px;
+}
+.main_restaurant .main_section_restaurant {
+  display: flex;
+  flex-direction: column;
 }
 .main_restaurant .section_restaurant_h2 {
   animation: fadein 1s ease-in-out both;
@@ -603,6 +619,42 @@ footer .link_footer {
   color: #F6F6F6;
 }
 
+@media screen and (min-width: 1300px) {
+  .body_annexe_restaurant {
+    margin: 0 300px;
+    background-image: url(../../assets/background/pexels-ella-olsson-1640777.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 908px) {
+  .main_section_btn_media {
+    display: flex;
+    width: 92%;
+    margin: auto;
+  }
+  .main_section_btn_fonctionnement {
+    margin: 0 20px;
+  }
+  .restaurant_media {
+    display: flex;
+    margin: auto;
+    width: 92%;
+  }
+  .restaurant_media .section_card_restaurant {
+    margin: 20px 20px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .menu_name_description {
+    padding-right: 25%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .btn:hover {
   filter: brightness(1.1);
   cursor: pointer;

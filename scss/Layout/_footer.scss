@@ -3,6 +3,13 @@ footer {
     color: $background-primary;
     padding: 18px 1px 24px 18px;
     font-size: 0.8em;
+
+    @media screen and (min-width: 708px) {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+    }
     
 
     .h3_footer {

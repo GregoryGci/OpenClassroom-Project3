@@ -1,0 +1,40 @@
+@media screen and (min-width: 1300px) {
+    .body_annexe_restaurant {
+        margin: 0 300px;
+        background-image: url(../../assets/background/pexels-ella-olsson-1640777.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 908px) {
+    .main_section_btn_media {
+        display: flex;
+        width: 92%;
+        margin: auto;
+    }
+    .main_section_btn_fonctionnement {
+        margin: 0 20px;
+    }
+
+    .restaurant_media {
+        display: flex;
+        margin: auto;
+        width: 92%;
+
+        .section_card_restaurant {
+            margin: 20px 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 708px) {
+    .menu_name_description {
+        padding-right: 25%;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

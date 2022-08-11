@@ -1,5 +1,6 @@
 .main_restaurant {
     background-color: $background-secondary;
+    overflow: hidden;
 
     img {
         object-fit: cover;
@@ -16,7 +17,10 @@
             font-size: 22px;
         }
     }
-
+    .main_section_restaurant {
+        display: flex;
+        flex-direction: column;
+    }
     /*MENU RESTAURANT*/
 
     .section_restaurant_h2 {
