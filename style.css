@@ -622,7 +622,7 @@ footer .link_footer {
 @media screen and (min-width: 1300px) {
   .body_annexe_restaurant {
     margin: 0 300px;
-    background-image: url(/assets/background/pexels-ella-olsson-1640777.jpg);
+    background-image: url(./assets/background/pexels-ella-olsson-1640777.jpg);
     background-size: cover;
   }
 }
