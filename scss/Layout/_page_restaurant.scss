@@ -14,7 +14,23 @@
 
         &::before {
             @include heart_icon;
-            font-size: 22px;
+        }
+        &::after {
+            @include heart_icon;
+            opacity: 1;
+            background-image: -webkit-linear-gradient($color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transition-timing-function: ease-in-out;
+            transform: scale(1.1);
         }
     }
     .main_section_restaurant {
